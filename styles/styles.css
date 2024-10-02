@@ -1,5 +1,5 @@
 nav {
-    background-color: steelblue;
+    
     padding: 10px;
 }
 
@@ -42,6 +42,83 @@ aside img {
 
 footer {
     margin-top: 1em;
-    border-top: 1px solid #000;
+    border-top: 0px solid #000;
     text-align: center;
+}
+
+.king {
+   
+    color: #eee;
+    margin-right: 10px;
+    margin-bottom: 70px;
+    top: 5px;
+    
+}
+.Princess{
+    background:linear-gradient(to right, #727376c9, #555658); 
+    margin: 10px;
+    
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    width: 1080PX;
+    height: 100PX;
+}
+.prince{
+    color: #eee;
+   
+}
+
+.article{
+    align-content: center;
+    background:linear-gradient(to right, #3352b8c9, #1c5094);
+
+    display: flex;
+    flex-direction: row;
+    width: 700px;
+    justify-content: space-between;
+    margin-right: 100px;
+}
+
+.image-with-text{
+   background-image: url("https://byui-cse.github.io/wdd130-ww-course/resources/images/littlecolorado-wide.jpg");
+   background-size: cover;
+   background-position: "center";
+   height: 400px;
+   width: 1080px;
+   align-items: center;
+   justify-content: center;
+   align-content: center;
+   display: flex;
+   text-align: center;
+   flex-direction: column;
+
+  
+}
+
+.Image-Container {
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+.social-logos{
+    height: 20px;
+    width: 50px;
+    margin: 0px;
+
+}
+
+.body{
+margin: 80px;
+align-items: center;
+}
+
+.sociallinks{
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    height: 10px;
+    width: 40px;
 }
