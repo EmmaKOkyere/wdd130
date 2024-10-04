@@ -122,28 +122,3 @@ align-items: center;
     height: 10px;
     width: 40px;
 }
-
-/* styles.css */  
-
-/* Add styles for the hero section */  
-.hero {  
-    position: relative; /* Make the hero image the containing block for absolutely positioned elements */  
-}  
-
-/* Style for the article to float it above the hero image */  
-.article {  
-    position: absolute; /* Position it absolutely */  
-    top: 20%; /* Adjust the top position as needed */  
-    left: 50%; /* Center horizontally */  
-    transform: translate(-50%, -50%); /* Center the article */  
-    background-color: rgba(255, 255, 255, 0.8); /* Optional: make background semi-transparent */  
-    padding: 20px; /* Add some padding for aesthetics */  
-    border-radius: 10px; /* Optional: rounded corners */  
-    z-index: 10; /* Make sure it appears above other elements */  
-}  
-
-/* Additional styles for accessibility and visual clarity */  
-img {  
-    max-width: 100%;  
-    height: auto;  
-}
