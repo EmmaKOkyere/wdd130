@@ -57,6 +57,8 @@ footer {
     background-color: #ddd;
     color: #000;
     clear: both;
+    display: flex;
+    justify-content: space-between;
 }
 
 * {
