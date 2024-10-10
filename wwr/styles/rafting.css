@@ -1,0 +1,124 @@
+/* rafting.css */  
+
+:root {  
+    --primary-color: #131313; /* Example primary color */  
+    --secondary-color: #131010; /* Example secondary color */  
+    --accent-color: #aea4bf;
+    --accent-color: #8f6593;
+    --background-color:var(--background-color)
+}  
+
+body {  
+    font-family: 'Roboto', sans-serif;  
+    background-color: var(--background-color);  
+    margin: 0;  
+    padding: 0;  
+}  
+
+header {  
+    max-width: 1200px; /* Limiting the width for better content design */  
+    margin: 0 auto;  
+}  
+
+nav {  
+    background-color: var(--header-color);  
+    padding: 10px;  
+}  
+
+nav div {  
+    display: flex;  
+    justify-content: space-around;  
+}  
+
+nav a {  
+    color: var(--link-color);  
+    text-decoration: none;  
+    padding: 15px;  
+}  
+
+.nav a:hover {  
+    text-decoration: underline; /* Optional: underline on hover */  
+}  
+
+.hero {  
+    text-align: center;  
+    margin: 20px 0;  
+}  
+
+.hero img {  
+    display: block;
+    max-width: 100%;  
+    height: auto;  
+}  
+
+h1, h2 {  
+    color: var(--primary-color);  
+}  
+
+p {  
+    color: var(--text-color);  
+    line-height: 1.6;  
+}  
+
+section {  
+    margin: 20px 0;  
+}  
+
+footer {  
+    background-color: var(--footer-background);  
+    padding: 20px;  
+    text-align: center;  
+}  
+
+footer .sociallinks {  
+    display: flex;  
+    justify-content: center;  
+}  
+
+footer .sociallinks a {  
+    margin: 0 10px;  
+    text-decoration: none; /* Remove underlines from social media links */  
+    color: var(--footer-link-color);  
+}  
+
+footer .sociallinks img {  
+    width: 30px; /* Adjust icon size */  
+    height: auto;  
+}  
+
+/* Optional: Media queries for responsiveness */  
+@media (max-width: 600px) {  
+    nav div {  
+        flex-direction: column;  
+        align-items: center;  
+    }  
+
+    footer .sociallinks {  
+        flex-direction: column;  
+    }  
+}
+
+.image-container { 
+    display: bl; 
+    width: 100%; /* Adjust based on your layout */  
+    text-align: center; /* Center the image */  
+    margin: 20px 0; /* Add some vertical spacing */  
+}  
+
+.styled-image {  
+    max-width: 100%; /* Make it responsive */  
+    height: auto; /* Maintain aspect ratio */  
+    border: 5px solid #333; /* Add a border */  
+    border-radius: 10px; /* Round the corners */  
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Add some shadow for depth */  
+    transition: transform 0.3s; /* Animation on hover */  
+}  
+
+.styled-image:hover {  
+    transform: scale(1.05); /* Slight zoom effect on hover */  
+}
+
+.images-size{
+    display: block;
+    width: 500px;
+}

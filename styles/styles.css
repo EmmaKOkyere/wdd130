@@ -58,7 +58,8 @@ footer {
     color: #000;
     clear: both;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    list-style-type: circle;
 }
 
 * {
