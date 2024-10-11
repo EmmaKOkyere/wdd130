@@ -1,13 +1,13 @@
 :root {  
-    --primary-color: #6a5acd; /* Updated to match the mockup */  
-    --secondary-color: #eaeaea; /* Updated to match the mockup */  
+    --primary-color: #6a5acd;  
+    --secondary-color: #eaeaea;  
     --accent-color: #8f6593;  
     --background-color: #f9f9f9;  
-    --header-color: #6a5acd; /* Updated to match the mockup */  
-    --link-color: #ffffff; /* Updated for better contrast */  
+    --header-color: #6a5acd;  
+    --link-color: #ffffff;  
     --text-color: #333;  
-    --footer-background: #6a5acd; /* Updated to match the mockup */  
-    --footer-link-color: #ffffff; /* Updated for better contrast */  
+    --footer-background: #6a5acd;  
+    --footer-link-color: #ffffff;  
 }  
 
 body {  
@@ -18,24 +18,38 @@ body {
 }  
 
 header {  
+    background-color: var(--header-color);  
+    padding: 10px 0;  
+
+}  
+
+.header-container {  
+    display: grid;  
+    grid-template-columns: auto 1fr auto; /* Logo, Title, Nav */  
+    align-items: center;  
     max-width: 1200px;  
     margin: 0 auto;  
-    background-color: var(--header-color);  
+    padding: 0 20px;  
+}  
+
+.logo {  
+    height: 150px; /* Adjust as needed */  
 }  
 
 nav {  
-    padding: 10px;  
+    display: flex;  
+    justify-content: flex-end; /* Align nav to the right */  
 }  
 
 nav div {  
     display: flex;  
-    justify-content: space-around;  
+    gap: 15px; /* Space between links */  
 }  
 
 nav a {  
     color: var(--link-color);  
     text-decoration: none;  
-    padding: 15px;  
+    padding: 10px;  
 }  
 
 nav a:hover {  
@@ -49,14 +63,11 @@ nav a:hover {
     background-color: var(--secondary-color);  
 }  
 
-.hero h1 {  
-    color: var(--primary-color);  
-}  
-
 .hero img {  
     display: block;  
     max-width: 100%;  
     height: auto;  
+    
 }  
 
 h1, h2 {  
@@ -68,10 +79,53 @@ p {
     line-height: 1.6;  
 }  
 
-section {  
+.history {  
+    text-align: center;
     margin: 20px 0;  
-    padding: 20px; /* Added padding for sections */  
-    background-color: var(--secondary-color); /* Added background color for sections */  
+    padding: 20px;  
+    background-color: var(--secondary-color);  
+}  
+
+.history-content {  
+    display: flex;  
+    align-items: center;  
+    gap: 20px; /* Space between image and text */  
+}  
+
+.history-image {  
+    width: 200px; /* Adjust as needed */  
+    height: auto;  
+    flex-direction: column;
+    
+}  
+
+.adventures {  
+    text-align: center;
+    margin: 20px 0;  
+    padding: 20px;  
+    background-color: var(--secondary-color);  
+}  
+
+.adventure-grid {  
+    display: grid;  
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));  
+    gap: 10px;  
+}  
+
+figure {  
+    margin: 0;  
+}  
+
+figure img {  
+    width: 100%;  
+    height: auto;  
+}  
+
+figcaption {  
+    text-align: center;  
+    font-weight: bold;  
+    color: var(--primary-color);  
+    padding-top: 5px;  
 }  
 
 footer {  
@@ -94,18 +148,18 @@ footer .sociallinks a {
 footer .sociallinks img {  
     width: 30px;  
     height: auto;  
+    right: auto;
 }  
 
 @media (max-width: 600px) {  
     nav div {  
         flex-direction: column;  
-        align-items: right;  
+        align-items: center;  
     }  
 
     footer .sociallinks {  
         flex-direction: column;  
-        align-items: right;  
-
+        align-items: center;  
     }  
 }  
 
@@ -127,10 +181,4 @@ footer .sociallinks img {
 
 .styled-image:hover {  
     transform: scale(1.05);  
-}  
-
-.image-grid {  
-    display: grid;  
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));  
-    gap: 10px;  
 }
