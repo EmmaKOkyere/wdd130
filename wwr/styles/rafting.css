@@ -1,11 +1,13 @@
-/* rafting.css */  
-
 :root {  
-    --primary-color: #131313; /* Example primary color */  
-    --secondary-color: #131010; /* Example secondary color */  
-    --accent-color: #aea4bf;
-    --accent-color: #8f6593;
-    --background-color:var(--background-color)
+    --primary-color: #6a5acd; /* Updated to match the mockup */  
+    --secondary-color: #eaeaea; /* Updated to match the mockup */  
+    --accent-color: #8f6593;  
+    --background-color: #f9f9f9;  
+    --header-color: #6a5acd; /* Updated to match the mockup */  
+    --link-color: #ffffff; /* Updated for better contrast */  
+    --text-color: #333;  
+    --footer-background: #6a5acd; /* Updated to match the mockup */  
+    --footer-link-color: #ffffff; /* Updated for better contrast */  
 }  
 
 body {  
@@ -16,12 +18,12 @@ body {
 }  
 
 header {  
-    max-width: 1200px; /* Limiting the width for better content design */  
+    max-width: 1200px;  
     margin: 0 auto;  
+    background-color: var(--header-color);  
 }  
 
 nav {  
-    background-color: var(--header-color);  
     padding: 10px;  
 }  
 
@@ -36,17 +38,23 @@ nav a {
     padding: 15px;  
 }  
 
-.nav a:hover {  
-    text-decoration: underline; /* Optional: underline on hover */  
+nav a:hover {  
+    text-decoration: underline;  
 }  
 
 .hero {  
     text-align: center;  
     margin: 20px 0;  
+    padding: 20px;  
+    background-color: var(--secondary-color);  
+}  
+
+.hero h1 {  
+    color: var(--primary-color);  
 }  
 
 .hero img {  
-    display: block;
+    display: block;  
     max-width: 100%;  
     height: auto;  
 }  
@@ -62,6 +70,8 @@ p {
 
 section {  
     margin: 20px 0;  
+    padding: 20px; /* Added padding for sections */  
+    background-color: var(--secondary-color); /* Added background color for sections */  
 }  
 
 footer {  
@@ -77,48 +87,50 @@ footer .sociallinks {
 
 footer .sociallinks a {  
     margin: 0 10px;  
-    text-decoration: none; /* Remove underlines from social media links */  
+    text-decoration: none;  
     color: var(--footer-link-color);  
 }  
 
 footer .sociallinks img {  
-    width: 30px; /* Adjust icon size */  
+    width: 30px;  
     height: auto;  
 }  
 
-/* Optional: Media queries for responsiveness */  
 @media (max-width: 600px) {  
     nav div {  
         flex-direction: column;  
-        align-items: center;  
+        align-items: right;  
     }  
 
     footer .sociallinks {  
         flex-direction: column;  
-    }  
-}
+        align-items: right;  
 
-.image-container { 
-    display: bl; 
-    width: 100%; /* Adjust based on your layout */  
-    text-align: center; /* Center the image */  
-    margin: 20px 0; /* Add some vertical spacing */  
+    }  
+}  
+
+.image-container {  
+    display: block;  
+    width: 100%;  
+    text-align: center;  
+    margin: 20px 0;  
 }  
 
 .styled-image {  
-    max-width: 100%; /* Make it responsive */  
-    height: auto; /* Maintain aspect ratio */  
-    border: 5px solid #333; /* Add a border */  
-    border-radius: 10px; /* Round the corners */  
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Add some shadow for depth */  
-    transition: transform 0.3s; /* Animation on hover */  
+    width: 100%;  
+    height: auto;  
+    border: 5px solid #333;  
+    border-radius: 10px;  
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);  
+    transition: transform 0.3s;  
 }  
 
 .styled-image:hover {  
-    transform: scale(1.05); /* Slight zoom effect on hover */  
-}
+    transform: scale(1.05);  
+}  
 
-.images-size{
-    display: block;
-    width: 500px;
+.image-grid {  
+    display: grid;  
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));  
+    gap: 10px;  
 }
