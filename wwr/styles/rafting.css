@@ -182,3 +182,63 @@ footer .sociallinks img {
 .styled-image:hover {  
     transform: scale(1.05);  
 }
+
+body {  
+    font-family: Arial, sans-serif;  
+    line-height: 1.6;  
+}  
+
+.header-container {  
+    display: flex;  
+    justify-content: space-between;  
+    align-items: center;  
+    padding: 10px;  
+}  
+
+.hero {  
+    background-color: #e0f7fa;  
+    padding: 20px;  
+    text-align: center;  
+}  
+
+.contact-info {  
+    margin: 20px 0;  
+}  
+
+.map {  
+    margin: 20px 0;  
+}  
+
+.employee-profiles {  
+    display: flex;  
+    justify-content: space-around;  
+    margin: 20px 0;  
+}  
+
+.employee {  
+    text-align: center;  
+}  
+
+img {  
+    width: 100px;  
+    height: 100px;  
+    border-radius: 50%;  
+}  
+
+form {  
+    margin-top: 20px;  
+}  
+
+.form-group {  
+    margin-bottom: 15px;  
+}  
+
+button {  
+    background-color: #007BFF;  
+    color: white;  
+    border: none;  
+    padding: 10px 15px;  
+    cursor: pointer;  
+    border-radius: 5px;  
+}  
+
