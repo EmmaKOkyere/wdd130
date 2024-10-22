@@ -20,6 +20,7 @@ body {
 header {  
     background-color: var(--header-color);  
     padding: 10px 0;  
+    display: grid;
 
 }  
 
@@ -136,7 +137,7 @@ footer {
 
 footer .sociallinks {  
     display: flex;  
-    justify-content: center;  
+    justify-content: right;  
 }  
 
 footer .sociallinks a {  
