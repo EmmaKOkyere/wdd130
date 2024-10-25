@@ -66,7 +66,7 @@ nav a:hover {
 
 .hero img {  
     display: block;  
-    max-width: 100%;  
+    width: 100%;  
     height: auto;  
     
 }  
@@ -130,15 +130,31 @@ figcaption {
 }  
 
 footer {  
+    display: flex;
+    flex-direction: row;
     background-color: var(--footer-background);  
     padding: 20px;  
     text-align: center;  
+    justify-content: space-between;
 }  
 
 footer .sociallinks {  
     display: flex;  
-    justify-content: right;  
+    justify-content: right;
+    margin-left: 200px; 
+    justify-items: right;
 }  
+
+footer p {
+    color: #ffffff;
+    justify-content: space-between;
+}
+
+
+footer a {
+    color: #ffffff;
+}
+
 
 footer .sociallinks a {  
     margin: 0 10px;  
@@ -165,11 +181,20 @@ footer .sociallinks img {
 }  
 
 .image-container {  
-    display: block;  
-    width: 100%;  
-    text-align: center;  
-    margin: 20px 0;  
-}  
+    background-image: url('../images/prince_class.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 300px; /* adjust height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+
 
 .styled-image {  
     width: 100%;  
@@ -204,10 +229,23 @@ body {
 
 .contact-info {  
     margin: 20px 0;  
-}  
+    margin-left: 30px;
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    justify-content: space-between;
+    background-color: #e0f7fa; ;
+} 
+.contact-us{
+    background-color:  #e0f7fa; 
+    margin-right: 50px;
+    margin-bottom: 15px;  
+    margin-left: 20px;
+} 
 
 .map {  
     margin: 20px 0;  
+    margin-left: 100%px;
 }  
 
 .employee-profiles {  
@@ -219,6 +257,13 @@ body {
 .employee {  
     text-align: center;  
 }  
+
+.employee-images {
+    width: 300px;
+    height: 300px;
+    border-radius: 0px;
+
+}
 
 img {  
     width: 100px;  
@@ -232,7 +277,15 @@ form {
 
 .form-group {  
     margin-bottom: 15px;  
-}  
+    margin-left: 20px;
+} 
+.form-head{
+    margin-left: 20px;
+} 
+.contact{
+    display: flex;
+    flex-direction: row;
+}
 
 button {  
     background-color: #007BFF;  
@@ -243,3 +296,78 @@ button {
     border-radius: 5px;  
 }  
 
+
+.forms-structure {
+    display: flex;
+    justify-content:flex-start;
+    align-items: end;
+    background-color:  #e0f7fa;
+    width: 600px;
+    margin: 20px;
+    margin-left: 20px;
+
+}
+
+.forms-side-image {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    justify-content:space-around;
+}
+
+.forms-image-style {
+    border-radius: 0px;
+    height: 450px;
+    width: 600px;
+}
+
+.trip-1 {
+    border-radius: 0px;
+    width: 500px;
+    height: 400px;
+}
+
+.trip {
+    border-radius: 0px;
+   justify-items: center;
+
+}
+.newsletter {
+    background-color: palevioletred;
+    width: 400px;
+}
+
+.text-cours {
+    color: blue;
+    text-align: center;
+    font-size:x-large
+}
+
+.text-cours:hover {
+    transform: scale(1.05s);
+}
+
+.cours {
+    background-color: rgb(193, 238, 223);
+    height: 30px;
+}
+
+.background-text {
+position: relative;
+}
+
+.background-text img {
+    border-radius: 0px;
+    width: 1600px;
+    height: 400px;
+}
+
+.background-text h1,
+.background-text p {
+position: absolute;
+top: 50%;
+left:50%;
+transform: translate(-50%, -50%);
+color: hwb(0 96% 3% / 0.934);
+text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}

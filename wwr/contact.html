@@ -3,18 +3,20 @@
 
 <head>  
     <meta charset="utf-8">  
+    <title>Contact Us - Get in Touch to Learn More About Our Services</title>  
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta name="description" content="Get in touch with us for inquiries and bookings about white water rafting adventures.">  
     <meta name="author" content="Emmanuel Okyere">
-    <title>Contact Us - Exciting White Water Rafting Adventures</title>  
-    <link rel="stylesheet" href="styles.css">  
+    <link rel="stylesheet" href="../wwr/styles/rafting.css">  
 </head>  
 
 <body>  
     <header>  
         <div class="header-container">  
             <img src="images/crossedoars.jpeg" alt="Logo" class="logo">  
-            <h1>White Water Rafting</h1>  
+            <div>
+            <h1>White Water Rafting</h1> 
+            </div> 
             <nav>  
                 <div>  
                     <a href="../index.html">Home</a>  
@@ -29,73 +31,96 @@
     <main>  
         <div class="hero">  
             <article>  
-               <h2>Welcome to Your Next Adventure!</h2>  
-               <p>Experience heart-pounding excitement on our white water rafting trips! Perfect for adrenaline junkies and nature lovers alike.</p>  
+               <h2>Contact Us - Get in Touch to Learn More About Our Services!</h2>  
+               <p>Experience heart-pounding excitement on our white water rafting trips! Perfect for adrenaline junkies and nature lovers alike. Get in contact with us now.</p>  
             </article>  
         </div>  
 
-        <section class="contact">  
-            <h3>Contact Us</h3>  
-            <div class="contact-info">  
+        <section class="contact"> 
+          
+            
+            <div class="contact-info"> 
+                <div class ="contact-us" > 
+                <h3>Contact Us</h3>  
                 <p>Address: 2000 Devereux Rd, Glenwood Springs, CO 81601, United States</p>  
                 <p>Phone Numbers: (970) 945-8477</p>  
                 <p>Email: <a href="mailto:info@whitewaterrift.com">info@whitewaterrift.com</a></p>  
+                </div>
                 <div class="map">  
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3075.9884226888003!2d-107.35613132554464!3d39.55986860734717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8741096248b0b099%3A0x6835dde86c877c52!2sWhitewater%20Rafting%2C%20LLC!5e0!3m2!1sen!2sgh!4v1729089383261!5m2!1sen!2sgh"  
                             width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  
                 </div>  
-            </div>  
+            </div>
+       
         </section>  
 
         <section class="employee-profiles">  
             <h4>Meet Our Team</h4>  
             <div class="employee">  
-                <img src="images/Happyemployee1.avif" alt="Employee 1">  
+                <img class="employee-images" src="images/Happyemployee1.avif" alt="Employee 1">  
                 <p>Isaac Okyere - Guide</p>  
             </div>  
             <div class="employee">  
-                <img src="images/happyemployee2.jpg" alt="Employee 2">  
+                <img class="employee-images" src="images/happyemployee2.jpg" alt="Employee 2">  
                 <p>Doris Okyere - Safety Officer</p>  
             </div>  
             <div class="employee">  
-                <img src="images/happyemployee3.jpg" alt="Employee 3">  
+                <img class="employee-images" src="images/happyemployee3.jpg" alt="Employee 3">  
                 <p>Emmanuel Okyere - Customer Service</p>  
             </div>  
-        </section>  
-
-        <form action="#" method="post" class="comment-form">  
-            <h5>Leave a Comment</h5>  
-            <div class="form-group">  
-                <label for="name">Your Name:</label>  
-                <input type="text" id="name" name="name" required>  
-            </div>  
-            <div class="form-group">  
-                <label for="email">Your Email Address:</label>  
-                <input type="email" id="email" name="email" required>  
-            </div>  
-            <div class="form-group">  
-                <label for="inquiry">Purpose of the Message:</label><br>  
-                <input type="radio" id="inquiry" name="inquiry" value="General Inquiry">  
-                <label for="general">General Inquiry</label><br>  
-                <input type="radio" id="reservation" name="inquiry" value="Reservation Question">  
-                <label for="reservation">Reservation Question</label><br>  
-                <input type="radio" id="suggestion" name="inquiry" value="Website Suggestion">  
-                <label for="suggestion">Website Suggestion</label>  
-            </div>  
-            <div class="form-group">  
-                <label for="message">Your Message:</label><br>  
-                <textarea id="message" name="message" rows="4" required></textarea>  
-            </div>  
-            <div class="form-group">  
-                <input type="checkbox" id="subscribe" name="subscribe">  
-                <label for="subscribe">Please subscribe me to the monthly newsletter</label>  
-            </div>  
-            <button type="submit">Submit</button>  
-        </form>  
+        </section> 
+        <div class="forms-side-image">
+            <div class="forms-structure">
+                <form action="POST" method="post" class="comment-form">  
+                    <h2 class="form-head">Leave a Comment</h2>  
+                    <div class="form-group">  
+                        <label for="name">Your Name:</label>  
+        
+                        <input type="text" id="name" name="name" required>  
+                    </div>  
+                    <div class="form-group">  
+                        <label for="email">Your Email Address:</label>  
+                        <input type="email" id="email" name="email" required>  
+                    </div>  
+                    <div class="form-group">  
+                        <label for="inquiry">Purpose of the Message:</label><br>  
+                        <input type="radio" id="inquiry" name="inquiry" value="General Inquiry">  
+                        <label for="general">General Inquiry</label><br>  
+                        <input type="radio" id="reservation" name="inquiry" value="Reservation Question">  
+                        <label for="reservation">Reservation Question</label><br>  
+                        <input type="radio" id="suggestion" name="inquiry" value="Website Suggestion">  
+                        <label for="suggestion">Website Suggestion</label>  
+                    </div>  
+                    <div class="form-group">  
+                        <label for="message">Your Message:</label><br>  
+                        <textarea id="message" name="message" rows="4" required></textarea>  
+                    </div>  
+                    <div class="form-group">  
+                        <input type="checkbox" id="subscribe" name="subscribe">  
+                        <label for="subscribe">Please subscribe me to the monthly newsletter</label>  
+                    </div>  
+                    <button type="submit">Submit</button>  
+                </form>  
+            </div>
+            <img class="forms-image-style" src="images/formsSideImage.jpg" alt=""/>
+        </div> 
+        
     </main>  
 
-    <footer>  
-        <p>&copy; 2024 | Exciting White Water Rafting Adventures | <a href="https://app.moqups.com/sEY1y3w7eeDwYHlBBluVZOGiC4ZnXeuA/view/page/a546a03e9" target="_blank">View Contact Us Wireframe</a></p>  
+    <footer class="footer">  
+        <p>&copy; 2024 | Exciting White Water Rafting Adventures | 
+            <a href="https://app.moqups.com/sEY1y3w7eeDwYHlBBluVZOGiC4ZnXeuA/view/page/a546a03e9" target="_blank">View Contact Us Wireframe</a></p>  
+        <nav class="sociallinks">  
+            <a href="https://www.facebook.com/">  
+                <img src="images/facebook_logo.webp" alt="Facebook">  
+            </a>  
+            <a href="https://x.com">  
+                <img src="images/twitter.webp" alt="Twitter">  
+            </a>  
+            <a href="https://www.instagram.com/">  
+                <img src="images/instagram.webp" alt="Instagram">  
+            </a>  
+        </nav>  
     </footer>  
 </body>  
 

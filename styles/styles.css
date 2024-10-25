@@ -1,6 +1,8 @@
 nav {
     background-color: steelblue;
     padding: 10px;
+    display: flex;
+    flex-direction: row;
 }
 
 nav a {
@@ -37,6 +39,8 @@ aside {
     background-color: #eee;
     color: #333;
     text-align: center;
+    justify-items: center;
+    align-items: center;
 }
 
 aside img {
@@ -82,3 +86,4 @@ footer {
 .root {
     --my-favorite-color: steelblue;
 }
+
