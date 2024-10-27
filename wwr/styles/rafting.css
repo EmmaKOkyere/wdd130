@@ -194,6 +194,15 @@ footer .sociallinks img {
     text-align: center;
   }
 
+.image-container p {
+    display: flex;
+    display: block;
+    border: 1px solid;
+    padding: 1rem;
+    margin-left: 5rem;
+    background-color: antiquewhite;
+}
+
 
 
 .styled-image {  
@@ -244,8 +253,9 @@ body {
 } 
 
 .map {  
+    padding: 20px;
     margin: 20px 0;  
-    margin-left: 100%px;
+    margin-right: 100px;
 }  
 
 .employee-profiles {  
@@ -344,7 +354,7 @@ button {
 }
 
 .text-cours:hover {
-    transform: scale(1.05s);
+    transform: scale(1.05);
 }
 
 .cours {
@@ -370,4 +380,12 @@ left:50%;
 transform: translate(-50%, -50%);
 color: hwb(0 96% 3% / 0.934);
 text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.box {
+    display: block;
+    border: 1px solid;
+    padding: 1rem;
+    margin-left: 1rem;
+    background-color: antiquewhite;
 }
