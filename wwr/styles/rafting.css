@@ -194,7 +194,7 @@ footer .sociallinks img {
     text-align: center;
   }
 
-.image-container p {
+.image-container-2 {
     display: flex;
     display: block;
     border: 1px solid;
@@ -383,9 +383,10 @@ text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .box {
+    flex-direction: row;
     display: block;
     border: 1px solid;
     padding: 1rem;
     margin-left: 1rem;
-    background-color: antiquewhite;
+    background-color: rgba(142, 141, 139, 0.751);
 }
